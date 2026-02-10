@@ -1,7 +1,7 @@
 # Exploring Generative Process Reward Modeling for Semi-Structured Data: A Case Study of Table Question Answering
 
 Code for EACL submission [Exploring Generative Process Reward Modeling for Semi-Structured Data:
-A Case Study of Table Question Answering]
+A Case Study of Table Question Answering](https://arxiv.org/abs/2510.20304)
 
 ## Environment
 conda create --name tqa_prm 
@@ -87,4 +87,4 @@ Generate rationales
             --size 8
 
 ## Acknowledgement
-The code framework is mainly based on [GenPRM] (https://github.com/RyanLiu112/GenPRM). The model training is based on [LlamaFactoryllama](https://github.com/hiyouga/LLaMA-Factory/tree/main/src/llamafactory).
+The code framework is mainly based on [GenPRM](https://github.com/RyanLiu112/GenPRM). The model training is based on [LlamaFactoryllama](https://github.com/hiyouga/LLaMA-Factory/tree/main/src/llamafactory).
