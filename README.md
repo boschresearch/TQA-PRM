@@ -3,13 +3,6 @@
 Code for EACL submission [Exploring Generative Process Reward Modeling for Semi-Structured Data:
 A Case Study of Table Question Answering](https://arxiv.org/abs/2510.20304)
 
-## Environment
-conda create --name tqa_prm 
-
-conda activate tqa_prm 
-
-pip install -r requirements.txt 
-
 ## Overview
 Process reward models (PRMs) improve complex reasoning in large language models (LLMs) by grading candidate solutions step-by-step and selecting answers via aggregated step scores. 
 While effective in domains such as mathematics, their applicability to tasks involving semi-structured data, like table question answering (TQA) remains unexplored. 
@@ -19,9 +12,17 @@ Results show that PRMs that combine textual and code verification can aid soluti
 Analysis reveals a weak correlation between performance in step-level verification and answer accuracy, possibly stemming from weak step dependencies and loose causal links. 
 Our findings highlight limitations of current PRMs on TQA and offer valuable insights for building more robust, process-aware verifiers.
 
-## Training Data Synthesis
+
+### Environment
+```
+conda create --name tqa_prm 
+
+conda activate tqa_prm 
+
+pip install -r requirements.txt
+```
+
 ### Reasoning Path Generation
-Generate policy reasoning paths
 
     bash policy_inference/inference.sh \
         --LM <model_path> \
@@ -33,7 +34,6 @@ Generate policy reasoning paths
         --loop 1
 
 ### Rationale Generation
-Generate rationales
 
     python rationale_generation/process.py \
         --model_path <model_path> \
